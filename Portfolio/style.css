@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.hero{
+   position: relative;
+   width: 100%;
+   height: 100vh;
+   background: #eff4fd; 
+}
+
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 0px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: aqua;
+}
+
+.detail{
+    margin-left: 1%;
+    margin-top: 15%;
+}
+
+.detail h1{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom:20px ;
+}
+
+span{
+    color: chocolate;
+}
+
+.detail{
+    color: #555;
+    line-height: 22px;
+}
+
+.detail a{
+background: #212121;
+padding: 5px 18px;
+text-decoration: none;
+font-weight: bold;
+color: #fff;
+margin: 30px 0;
+border-radius: 20px;
+display: inline-block
+}
+ #a{
+    position: relative;
+ }
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 75px;
+    right: 100px;
+}
+
+.images img{
+    height: 50%;
+    position: absolute;
+    left: 70%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.images:hover .shape{
+    bottom: 40px;
+}
+
+.images:hover .student{
+    left:45%;
+}
+#bshape{
+    content: "";
+    height: 232px;
+    width: 207px;
+    background: brown;
+    border: 1px solid brown;
+    margin-top: 10%;
+    left: 65%;
+    z-index: 0;
+    position: absolute;
+    border-radius: 251px 235px 80px 80px;
+}
+#skills{
+    margin: 2%;
+    color: black;
+}
+#skills li{
+    margin: 1%;
+}
+#contact{
+    color: black;
+    margin-bottom: 10px;
+}
+#contact p{
+    margin: 1%;
+}
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #75a0ba;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
