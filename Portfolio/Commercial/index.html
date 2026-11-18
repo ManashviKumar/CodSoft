@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fanta Interactive | GSAP Product Showcase</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0,0" />
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <div id="main">
+        <!-- Navigation -->
+        <nav>
+            <a href="#home" id="logo">FANTA<span>®</span></a>
+            
+            <div class="Cen-nav" id="navMenu">
+                <a href="#home">Home</a>
+                <a href="#about">Flavours</a>
+                <a href="#products">Shop</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="cart-trigger" id="openCartBtn" aria-label="Open shopping cart">
+                    <span class="material-symbols-outlined">shopping_bag</span>
+                    <span class="cart-badge" id="cartCount">0</span>
+                </button>
+                <button class="menu-btn" id="menuToggle" aria-label="Toggle menu">
+                    <span class="material-symbols-outlined menu-icon">menu</span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="one">
+            <div class="hero-tagline">NEW CITRUS FORMULA • 2026 EDITION</div>
+            <h1 id="bottle">FANTA</h1>
+            <img id="Fanta" src="Images/Fanta_can-removebg-preview.png" alt="Fanta Orange Can">
+            <img id="slice" src="Images/one_slice-removebg-preview.png" alt="Orange Slice">
+            <img id="orange" src="Images/pngtree-orange-png-png-image_3619070-removebg-preview.png" alt="Fresh Oranges">
+            <img id="multileaf" src="Images/multi_leafs-removebg-preview.png" alt="Citrus Leaves">
+            <img id="twoleaf" src="Images/2leafs-removebg-preview.png" alt="Two Leaves">
+            <img id="leaf" src="Images/Leaf-removebg-preview.png" alt="Single Leaf">
+            
+            <a href="#about" class="scroll-indicator">
+                <span>Scroll to Explore</span>
+                <span class="material-symbols-outlined">expand_more</span>
+            </a>
+        </section>
+
+        <!-- Feature / About Section -->
+        <section id="about" class="two">
+            <div class="left-two">
+                <div id="bshape"></div>
+            </div>
+            <div class="right-two">
+                <span class="section-pill">100% BOLD REFRESHMENT</span>
+                <h1>Flavour Updated</h1>
+                <p>
+                    Bursting with bold, vibrant citrus refreshment, the new Fanta Orange delivers an unmistakable rush of fruity fizz in every sip. Crafted with natural orange flavours and zero compromises on fun, it is designed to turn ordinary moments into pure, refreshing energy.
+                </p>
+                <div class="about-actions">
+                    <a href="#products" class="cta-btn">Explore Lineup</a>
+                    <button type="button" class="secondary-btn" id="openNutritionBtn">Nutrition Facts</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Showcase Section -->
+        <section id="products" class="three">
+            <div class="products-header">
+                <h2>Choose Your Chill</h2>
+                <p>Chilled 300ml cans delivered straight to your doorstep</p>
+            </div>
+
+            <div class="cards-container">
+                <!-- Card 1: Pepsi -->
+                <div class="card">
+                    <img class="lemon" src="Images/lemon-removebg-preview.png" alt="Lemon Splash">
+                    <img id="pepsi" src="Images/pepsi_can-removebg-preview.png" alt="Pepsi Can">
+                    <h2>Pepsi</h2>
+                    <p class="price">₹40 / 300ml</p>
+                    <button type="button" class="add-to-cart-btn" data-name="Pepsi (300ml)" data-price="40" data-img="Images/pepsi_can-removebg-preview.png">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <!-- Card 2: Fanta (GSAP Target on Desktop, Static Fallback on Mobile) -->
+                <div class="card featured-card">
+                    <span class="featured-badge">Best Seller</span>
+                    <img class="mobile-fallback-slice" src="Images/one_slice-removebg-preview.png" alt="Orange Slice">
+                    <img class="mobile-fallback-can" src="Images/Fanta_can-removebg-preview.png" alt="Fanta Orange Can">
+                    <h2>Fanta Orange</h2>
+                    <p class="price">₹40 / 300ml</p>
+                    <button type="button" class="add-to-cart-btn" data-name="Fanta Orange (300ml)" data-price="40" data-img="Images/Fanta_can-removebg-preview.png">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <!-- Card 3: Coca-Cola -->
+                <div class="card">
+                    <img class="lemon" src="Images/lemon-removebg-preview.png" alt="Lemon Splash">
+                    <img id="Coca-Cola" src="Images/Co_cola_can-removebg-preview.png" alt="Coca-Cola Can">
+                    <h2>Coca-Cola</h2>
+                    <p class="price">₹40 / 300ml</p>
+                    <button type="button" class="add-to-cart-btn" data-name="Coca-Cola (300ml)" data-price="40" data-img="Images/Co_cola_can-removebg-preview.png">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer id="contact" class="four">
+            <h4>All India Rights Reserved</h4>
+            <p>Refreshment crafted for every celebration. Enjoy responsibly. Trademarks owned by The Coca-Cola Company and respective beverage partners.</p>
+            <h3>Copyright © 2026 | Reg. No. 089080</h3>
+            <div class="imageclass">
+                <a href="#contact" aria-label="Instagram"><img src="Images/insta_logo-removebg-preview.png" alt="Instagram"></a>
+                <a href="#contact" aria-label="Twitter"><img src="Images/Twitter-removebg-preview.png" alt="Twitter"></a>
+                <a href="#contact" aria-label="Facebook"><img src="Images/facebook-removebg-preview.png" alt="Facebook"></a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Slide-out Cart Drawer -->
+    <div class="drawer-backdrop" id="cartBackdrop"></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping Cart">
+        <div class="drawer-header">
+            <h3>Your Chilled Cart</h3>
+            <button type="button" class="close-btn" id="closeCartBtn" aria-label="Close cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItemsContainer">
+            <p class="empty-cart-msg">Your cart is empty. Pick a cold drink!</p>
+        </div>
+        <div class="drawer-footer">
+            <div class="cart-total-row">
+                <span>Total Amount</span>
+                <strong id="cartTotal">₹0</strong>
+            </div>
+            <button type="button" class="checkout-btn" id="checkoutBtn" disabled>Place Order</button>
+            <p class="checkout-feedback" id="checkoutFeedback"></p>
+        </div>
+    </aside>
+
+    <!-- Nutrition Facts Modal -->
+    <div class="modal-overlay" id="nutritionModal">
+        <div class="modal-card">
+            <button type="button" class="modal-close" id="closeNutritionBtn">&times;</button>
+            <h3>Fanta Orange — Nutrition Facts</h3>
+            <p class="modal-sub">Serving Size: 1 Can (300ml)</p>
+            <table class="nutrition-table">
+                <tbody>
+                    <tr><td>Energy</td><td><strong>132 kcal</strong></td></tr>
+                    <tr><td>Total Carbohydrates</td><td><strong>33.0 g</strong></td></tr>
+                    <tr><td>Total Sugars</td><td><strong>32.4 g</strong></td></tr>
+                    <tr><td>Protein</td><td><strong>0 g</strong></td></tr>
+                    <tr><td>Total Fat</td><td><strong>0 g</strong></td></tr>
+                    <tr><td>Sodium</td><td><strong>24 mg</strong></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">Added to cart!</div>
+
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="Script.js"></script>
+</body>
+
+</html>
