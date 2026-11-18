@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthFit | Transform Your Physique</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Sticky Header -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#home" class="logo">Health<span>Fit</span></a>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#compare">Compare Plans</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button class="btn btn-primary open-modal-btn" data-plan="Pro">Join Now</button></li>
+            </ul>
+
+            <!-- Mobile Hamburger Menu -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero container">
+            <div class="hero-content">
+                <div class="badge">🔥 Limited Time Offer</div>
+                <h1>Push Beyond Your Limits at <span>HealthFit</span></h1>
+                <p class="hero-desc">
+                    Transform your body and mind with state-of-the-art equipment, certified personal trainers, and a community built for results.
+                </p>
+
+                <!-- Dynamic Countdown Timer -->
+                <div class="timer-box">
+                    <p class="timer-label">Introductory Discount Ends In:</p>
+                    <div id="countdown" class="countdown-display">
+                        <div class="time-unit"><span id="days">00</span><small>Days</small></div>
+                        <div class="time-unit"><span id="hours">00</span><small>Hours</small></div>
+                        <div class="time-unit"><span id="minutes">00</span><small>Mins</small></div>
+                        <div class="time-unit"><span id="seconds">00</span><small>Secs</small></div>
+                    </div>
+                </div>
+
+                <div class="hero-buttons">
+                    <button class="btn btn-primary open-modal-btn" data-plan="Pro">Start Free Trial</button>
+                    <a href="#pricing" class="btn btn-outline">View Plans</a>
+                </div>
+            </div>
+
+            <div class="hero-images">
+                <img class="main-img" src="baki.jpg" alt="Athlete training at HealthFit">
+                <div class="floating-card">
+                    <img class="dumbell-img" src="dumbell.jpg" alt="Dumbbells">
+                    <div>
+                        <strong>50+ Equipment</strong>
+                        <span>Pro-grade weights & cardio</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="pricing-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Transparent <span>Membership Plans</span></h2>
+                    <p>No hidden fees. Choose a plan that fits your fitness schedule and goals.</p>
+                </div>
+
+                <div class="pricing-grid">
+                    <!-- Beginner Plan -->
+                    <div class="price-card">
+                        <h3>Beginner</h3>
+                        <p class="plan-subtitle">For those starting their fitness journey</p>
+                        <div class="price">₹500<span>/month</span></div>
+                        <ul class="features-list">
+                            <li>✓ 2 Hours daily gym access</li>
+                            <li>✓ 1 General trainer guidance</li>
+                            <li>✓ Locker & shower access</li>
+                            <li>✓ Email & app support</li>
+                            <li class="disabled">✕ Personalized diet plan</li>
+                        </ul>
+                        <button class="btn btn-outline full-width open-modal-btn" data-plan="Beginner">Choose Beginner</button>
+                    </div>
+
+                    <!-- Pro Plan (Highlighted) -->
+                    <div class="price-card popular">
+                        <div class="popular-tag">Most Popular</div>
+                        <h3>Pro</h3>
+                        <p class="plan-subtitle">For dedicated lifters & athletes</p>
+                        <div class="price">₹750<span>/month</span></div>
+                        <ul class="features-list">
+                            <li>✓ 4 Hours daily gym access</li>
+                            <li>✓ 2 Dedicated trainers</li>
+                            <li>✓ Full health center & sauna access</li>
+                            <li>✓ Priority support & body tracking</li>
+                            <li>✓ Basic nutrition guide</li>
+                        </ul>
+                        <button class="btn btn-primary full-width open-modal-btn" data-plan="Pro">Choose Pro</button>
+                    </div>
+
+                    <!-- Legend Plan -->
+                    <div class="price-card">
+                        <h3>Legend</h3>
+                        <p class="plan-subtitle">All-inclusive elite transformation</p>
+                        <div class="price">₹1000<span>/month</span></div>
+                        <ul class="features-list">
+                            <li>✓ Unlimited (6+ hrs) daily access</li>
+                            <li>✓ 3 Personal coaches & physio</li>
+                            <li>✓ VIP lounge, sauna & ice bath</li>
+                            <li>✓ 24/7 1-on-1 trainer support</li>
+                            <li>✓ Custom weekly meal plans</li>
+                        </ul>
+                        <button class="btn btn-outline full-width open-modal-btn" data-plan="Legend">Choose Legend</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compare Plans Section -->
+        <section id="compare" class="compare-section container">
+            <div class="section-header">
+                <h2>Compare <span>Features</span></h2>
+                <p>See what is included in each tier at a glance.</p>
+            </div>
+
+            <div class="table-responsive">
+                <table class="compare-table">
+                    <thead>
+                        <tr>
+                            <th>Features</th>
+                            <th>Beginner</th>
+                            <th class="highlight-col">Pro</th>
+                            <th>Legend</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cardio & Strength Zone</td>
+                            <td>✓</td>
+                            <td class="highlight-col">✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>Daily Access Limit</td>
+                            <td>2 Hours</td>
+                            <td class="highlight-col">4 Hours</td>
+                            <td>6 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>Personal Trainers Included</td>
+                            <td>1</td>
+                            <td class="highlight-col">2</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Sauna & Recovery Zone</td>
+                            <td>—</td>
+                            <td class="highlight-col">✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>Custom Diet & Macro Plan</td>
+                            <td>—</td>
+                            <td class="highlight-col">✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>Guest Pass (Bring a Friend)</td>
+                            <td>—</td>
+                            <td class="highlight-col">—</td>
+                            <td>✓</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container footer-content">
+            <div>
+                <a href="#home" class="logo">Health<span>Fit</span></a>
+                <p>Building stronger bodies and disciplined minds every day.</p>
+            </div>
+            <div class="footer-links">
+                <p><strong>Location:</strong> Main Fitness Avenue, Sports Complex</p>
+                <p><strong>Hours:</strong> Mon - Sat: 5:00 AM – 10:00 PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy; 2026 HealthFit.com | All rights reserved</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Registration Modal -->
+    <div class="modal-overlay" id="signupModal">
+        <div class="modal-box">
+            <button class="close-modal" id="closeModal">&times;</button>
+            <h2>Join <span>HealthFit</span></h2>
+            <p>Fill out your details to lock in your promotional rate.</p>
+            
+            <form id="membershipForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="you@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="planSelect">Selected Plan</label>
+                    <select id="planSelect">
+                        <option value="Beginner">Beginner (₹500/month)</option>
+                        <option value="Pro" selected>Pro (₹750/month)</option>
+                        <option value="Legend">Legend (₹1000/month)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary full-width">Confirm Membership</button>
+            </form>
+            <div id="formSuccess" class="success-msg hidden">
+                🎉 Welcome aboard! Check your email for your gym pass and onboarding details.
+            </div>
+        </div>
+    </div>
+
+    <script src="timer.js"></script>
+</body>
+
+</html>
